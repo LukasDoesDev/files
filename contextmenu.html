@@ -64,8 +64,8 @@
         contextMenu.appendChild(buttonElement);
       }
       contextMenuParent.style.display = 'unset';
-      contextMenu.style.marginTop = e.pageY;
-      contextMenu.style.marginLeft = e.pageX + 2;
+      contextMenu.style.marginTop = e.clientY + window.pageYOffset;
+      contextMenu.style.marginLeft = e.clientX + window.pageXOffset + 2;
     });
   }
 
