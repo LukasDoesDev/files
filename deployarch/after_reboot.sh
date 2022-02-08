@@ -1,5 +1,5 @@
-curl -O https://codeload.github.com/LukasDoesDev/deployarch/zip/master
+curl -O https://gitlab.com/LukasDoesDev/deployarch/-/archive/master/deployarch-master.zip
 pacman -Sy unzip
-unzip master
+unzip deployarch-master.zip
 cd deployarch-master
 ./after_reboot.sh
